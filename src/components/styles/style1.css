@@ -1,0 +1,1012 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap");
+#div1 {
+  width: 100%;
+  background-color: rgb(49, 96, 216);
+  height: 120px;
+}
+
+#thEncabezado {
+  width: 30%;
+}
+
+#thEncabezado2 {
+  width: 8%;
+}
+
+#thEncabezado3 {
+  width: 35%;
+}
+
+#thEncabezado4 {
+  width: 4%;
+}
+
+/* Estilo para el campo de entrada */
+#miInput {
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnBuscar {
+  background-image: url("../img/search.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Estilo para el icono de búsqueda */
+#miInput::after {
+  content: "🔍";
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Cambia el color del icono al hacer hover */
+#miInput:hover::after {
+  color: #333;
+}
+
+#btnEncabezado {
+  font-size: 23px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnCategories {
+  background-color: transparent;
+  font-size: 18px;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#categoriasContainer {
+  margin-top: 15px;
+}
+
+#contenedorArticulos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Estilos para las filas de artículos */
+.fila {
+  display: flex;
+  flex-wrap: wrap; /* Para que los elementos se envuelvan a la siguiente fila */
+  justify-content: space-between;
+}
+
+/* Estilos para los divs de los artículos */
+.articulo {
+  width: calc(25% - 2vw); /* Ajusta el ancho para que haya 4 elementos en una fila por defecto */
+  height: auto;
+  border: 1px solid #ccc;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 1vw; /* Espacio entre elementos */
+  border: none;
+}
+
+/* Estilos para las imágenes de los artículos */
+.articulo img {
+  max-width: 100%;
+  max-height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* Media Query para cambiar a 3 elementos por fila */
+@media (max-width: 1024px) {
+  .articulo {
+    width: calc(33.33% - 2vw);
+  }
+}
+/* Media Query para cambiar a 2 elementos por fila */
+@media (max-width: 768px) {
+  .articulo {
+    width: calc(50% - 2vw);
+  }
+}
+/* Media Query para cambiar a 1 elemento por fila */
+@media (max-width: 480px) {
+  .articulo {
+    width: calc(100% - 2vw);
+  }
+}
+#pDepartamento {
+  font-size: 25px;
+  color: rgb(138, 208, 240);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#pPrice {
+  color: rgb(43, 130, 26);
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+#btnAdd {
+  background-color: rgb(49, 96, 216);
+  width: 10vw;
+  height: 35px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#cantidadInput {
+  width: 50px;
+  height: 30px;
+  font-size: 15px;
+  margin-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#divInvoice2 {
+  border: 2px solid rgb(49, 96, 216);
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#divInvoice {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+#btnDepartaments {
+  background-color: transparent;
+  border: none;
+  margin-left: 15px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#departamentosContainer {
+  background-color: white;
+  /* border-radius: 20px; */
+  text-align: left;
+  width: 97%;
+  margin-bottom: 50px;
+  margin-left: 17px;
+  margin-top: -5px;
+}
+
+#btnPagar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: rgb(49, 96, 216);
+  font-size: 15px;
+  border: none;
+  width: 300px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para el footer */
+footer {
+  /* background-color: rgb(49, 96, 216); */
+  /* background-color: rgb(177, 197, 255); */
+  background-color: rgb(49, 96, 216);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed; /* Cambiado a posición fija */
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  margin-left: -10px;
+}
+
+#pFooter {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+#thInvoice1 {
+  width: 800px; /* Establece el ancho en 800px */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+#thInvoice2 {
+  width: 300px; /* Establece el ancho en 300px */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+#tableInvoice {
+  margin-bottom: 20px; /* Agrega un margen inferior de 20px al elemento de la tabla */
+} 
+#imgCart {
+  width: 20%;
+}
+
+#pCart {
+  color: rgb(43, 130, 26);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnRoutes {
+  background-color: transparent;
+  font-size: 18px;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/*BLOG DE PUBLICACIONES*/
+/*Dentro del header se configura el fondo del encabezado,la anchura, el largo, el color de sombreado que tendra y la forma del borde del 
+  final del header */
+header {
+  background: #01a9db;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 0px 30px #A4A4A4;
+  border-bottom-style: solid;
+  border-bottom-color: #585858;
+  border-bottom-width: 5px;
+}
+
+#encabezado {
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  border: 0px solid #000;
+}
+
+/*Se le da formato al logo para que este pueda adaptarse en el header y encabezado */
+#logo {
+  width: 30%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 55px;
+}
+
+/*En la propiedad menu se esta definiendo el color y el ancho que se tendra para los elementos que vienen dentro del menu */
+#menu {
+  width: 60%;
+  height: 30px;
+  float: right;
+  border: 0px solid red;
+  margin-top: 57px;
+}
+
+/*Configurar estilo para el menu y los elementos o categorias que este posee */
+#menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/*mediante este se define el tamaño el espaciado, el color y el tipo de letra que seran aquellas categorias que se encuentren dentro del menu con
+  la clase de enlace */
+#menu ul li .enlace {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*Aqui se agrega un hover a los elementos correspondientes a la clase enlace esto para que cuando se pone el cursor sobre uno de estos elementos aparece un 
+  color distinto al que se establecio de fondo */
+#menu ul li .enlace:hover {
+  background: #585858;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#menu ul li .active {
+  background: #585858;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px;
+}
+
+#principal {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  /* border: 1px solid; */
+  border: none;
+  margin: 25px solid;
+  align-items: center;
+}
+
+#publicaciones {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  border: none;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.post {
+  width: 83%;
+  align-content: center;
+  height: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: #fdfdfd;
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-left-color: #0489B1;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #ccc;
+  margin-bottom: 25px;
+  margin: 50px;
+}
+
+.enlace-post {
+  text-decoration: none;
+}
+
+#publicaciones a .titulo-post {
+  color: #6e6e6e;
+  font-size: 22px;
+  font-family: calibri light;
+}
+
+#publicaciones a .titulo-post:hover {
+  text-decoration: underline;
+}
+
+#publicaciones .img-post {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 7px 7px 7px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#publicaciones .datos-publicaciones {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0489B1;
+}
+
+#publicaciones .parrafo-post {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #848484;
+  padding: 5px;
+}
+
+#publicaciones .leer-mas {
+  background: #0489B1;
+  color: #fff;
+  border: 0px;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#publicaciones .num-comentarios {
+  background: #0b3b39;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/*CARRUSEL*/
+.logo-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-container {
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+}
+
+.logos {
+  flex: 0 0 auto;
+}
+
+.logos img {
+  max-width: 100px;
+  margin: 0 10px; /* Espacio entre logos */
+}
+
+/*CONTACTO*/
+#imgContacto {
+  width: 5%;
+  margin-right: 20px;
+}
+
+/*Dentro del header se configura el fondo del encabezado,la anchura, el largo, el color de sombreado que tendra y la forma del borde del 
+final del header */
+header {
+  background: #01a9db;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 0px 30px #A4A4A4;
+  border-bottom-style: solid;
+  border-bottom-color: #585858;
+  border-bottom-width: 5px;
+}
+
+#encabezado {
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  border: 0px solid #000;
+}
+
+/*Se le da formato al logo para que este pueda adaptarse en el header y encabezado */
+#logo {
+  width: 30%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 55px;
+}
+
+/*En la propiedad menu se esta definiendo el color y el ancho que se tendra para los elementos que vienen dentro del menu */
+#menu {
+  width: 60%;
+  height: 30px;
+  float: right;
+  border: 0px solid red;
+  margin-top: 57px;
+}
+
+/*Configurar estilo para el menu y los elementos o categorias que este posee */
+#menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/*mediante este se define el tamaño el espaciado, el color y el tipo de letra que seran aquellas categorias que se encuentren dentro del menu con
+la clase de enlace */
+#menu ul li .enlace {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/*Aqui se agrega un hover a los elementos correspondientes a la clase enlace esto para que cuando se pone el cursor sobre uno de estos elementos aparece un 
+color distinto al que se establecio de fondo */
+#menu ul li .enlace:hover {
+  background: #585858;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#menu ul li .active {
+  background: #585858;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+  padding: 10px;
+}
+
+#principal {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  /* border: 1px solid; */
+  border: none;
+  margin: 25px solid;
+  align-items: center;
+}
+
+#publicaciones {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  border: none;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.post {
+  width: 83%;
+  align-content: center;
+  height: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: #fdfdfd;
+  border-left-style: solid;
+  border-left-width: 15px;
+  border-left-color: #0489B1;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #ccc;
+  margin-bottom: 25px;
+  margin: 50px;
+}
+
+.enlace-post {
+  text-decoration: none;
+}
+
+#publicaciones a .titulo-post {
+  color: #6e6e6e;
+  font-size: 22px;
+  font-family: calibri light;
+}
+
+#publicaciones a .titulo-post:hover {
+  text-decoration: underline;
+}
+
+#publicaciones .img-post {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 7px 7px 7px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#publicaciones .datos-publicaciones {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0489B1;
+}
+
+#publicaciones .parrafo-post {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #848484;
+  padding: 5px;
+}
+
+#publicaciones .leer-mas {
+  background: #0489B1;
+  color: #fff;
+  border: 0px;
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#publicaciones .num-comentarios {
+  background: #0b3b39;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/*CONTENIDO*/
+.contenedorPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%; /* Ajuste el ancho máximo al 100% */
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/*Subcontenedor que contiene la primer sección de dos cards y también la segunda sección de tres cards*/
+.subcontenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/*Estilos para el título*/
+.titulo {
+  font-size: 25px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center; /* Centra el texto */
+}
+
+/*Estilos para los párrafos que no son los de las cards*/
+.parrafo {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: none;
+  margin-left: 10px;
+  color: black;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*Estilos del contenedor interno que contiene como tal las cards y les da el acomodo en fila*/
+.contenedor1,
+.contenedor2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; /* Ajuste para ocupar el ancho completo */
+  align-items: center;
+  justify-content: center;
+  margin-left: 0; /* Sin margen a la izquierda */
+}
+
+.contenedor1Div1,
+.contenedor2Div2 {
+  width: 100%; /* Ajuste para ocupar el ancho completo */
+  background-color: white;
+  box-shadow: 2px 2px 7px rgb(225, 225, 225);
+  border-radius: 10px;
+  margin: 10px 0; /* Ajuste del margen */
+  padding: 10px;
+  text-align: center;
+}
+
+.contenedor1Div1 button,
+.contenedor2Div2 button {
+  font-size: 15px;
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/*Estilos del contenedor que da formato a cada card*/
+.contenedor1Div1 {
+  width: 45%;
+  margin-left: 25px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 7px rgb(185, 185, 185);
+  border: 1px rgb(236, 236, 236);
+}
+
+.contenedor1Div1 img {
+  width: 20%;
+}
+
+.contenedor1Div1 h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: black;
+}
+
+/*Estilo para los párrafos de las primeras dos cards*/
+.contenedor1Div1 p {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  color: black;
+}
+
+/*Estilos del contenedor que da formato a cada card*/
+.contenedor2Div2 {
+  width: 30%;
+  background-color: white;
+  box-shadow: 2px 2px 7px rgb(225, 225, 225);
+  border-radius: 10px;
+  margin: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.contenedor2Div2 img {
+  width: 100%;
+}
+
+.contenedor2Div2 h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: black;
+}
+
+/*Estilo de los párrafos de las últimas tres cards en fila*/
+.contenedor2Div2 p {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  color: rgb(0, 0, 0);
+}
+
+/*Estilos de los botones de las cards del segundo contenedor*/
+@media only screen and (max-width: 768px) {
+  .contenedorPrincipal {
+    padding: 10px;
+  }
+  .subcontenedor {
+    padding: 10px;
+  }
+  .contenedor1Div1,
+  .contenedor2Div2 {
+    width: 100%;
+  }
+  /* Ajusta otros estilos según sea necesario para pantallas más pequeñas */
+}
+/*LOGIN*/
+#imgLogin {
+  width: 100%;
+}
+
+#containerLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+#divLogin {
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 20vw;
+  height: 25vw;
+  border-radius: 20px;
+  border: 2px solid #0080ff;
+  box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
+  padding: 20px;
+  /* Añadido para dar espacio interno */
+  text-align: center;
+}
+
+.inputLogin-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconLogin {
+  width: 6vw;
+  height: 6vw;
+}
+
+.iconLogin imgLogin {
+  width: 80%;
+}
+
+.inputLogin {
+  text-align: left;
+  margin-left: 10px;
+  /* Ajusta según sea necesario */
+}
+
+#btnLogin {
+  background-color: rgb(136, 219, 255);
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  /* O ajusta según sea necesario */
+  height: 3vw;
+}
+
+#labelLogin {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#labelInputLogin {
+  font-weight: bold;
+}
+
+/*MENU DERECHO*/
+#color {
+  color: black;
+}
+
+.menu-container {
+  /* margin-top: 8px; */
+  position: fixed;
+  /* top: 0; */
+  right: 0;
+  height: 100%;
+  width: 60px;
+  /* background-color: rgb(177, 197, 255); */
+  /* background-color: rgb(240, 239, 239); */
+  background-color: rgb(243, 250, 255);
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-open {
+  width: 150px;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.toggle-button {
+  cursor: pointer;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.main-content {
+  margin-right: 60px;
+  padding: 20px;
+}
+
+.menu-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-content a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-content a:hover {
+  text-decoration: underline;
+}
+
+.menu-expanded .menu-content ul {
+  display: block;
+}
+
+/*MENU IZQUIERDO*/
+.menu-container2 {
+  /* margin-top: 8px; */
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+  height: 100%;
+  width: 150px;
+  /* background-color: rgb(177, 197, 255); */
+  /* background-color: rgb(49, 96, 216); */
+  /* background-color: rgb(240, 239, 239); */
+  background-color: rgb(243, 250, 255);
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#parrafo2 {
+  text-align: center;
+  margin-left: 10px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+#imgMENU {
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+/*PROFILE*/
+#btnProfile {
+  background-color: red;
+  border-radius: 20px;
+  font-size: 15px;
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10vw;
+}
+
+/*REGISTER*/
+#imgRegister {
+  width: 100%;
+}
+
+#containerRegister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+#divRegister {
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  width: 20vw;
+  height: 25vw;
+  border-radius: 20px;
+  border: 2px solid #0080ff;
+  box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
+  padding: 20px;
+  /* Añadido para dar espacio interno */
+  text-align: center;
+}
+
+.input-groupRegister {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iconRegister {
+  width: 6vw;
+  height: 6vw;
+}
+
+.iconRegister img {
+  width: 80%;
+}
+
+.inputRegister {
+  text-align: left;
+  margin-left: 10px;
+  /* Ajusta según sea necesario */
+}
+
+#btnRegister {
+  margin-top: 10px;
+  background-color: rgb(136, 219, 255);
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  /* O ajusta según sea necesario */
+  height: 3vw;
+}
+
+#labelRegister {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#labelInputRegister {
+  font-weight: bold;
+}/*# sourceMappingURL=style1.css.map */
